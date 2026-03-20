@@ -9,7 +9,7 @@ DB_PATH = os.path.join(BASE_DIR, "events.db")
 def get_connection():
     return sqlite3.connect(DB_PATH)
 
-
+#funct - create schema 
 def create_schema():
     with get_connection() as conn:
         cursor = conn.cursor()
